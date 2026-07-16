@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Piran Ocakbaşı Diclekent | Geleneksel Diyarbakır Kebap & Ocakbaşı</title>
+  <meta name="description" content="Diyarbakır Kayapınar Diclekent'te Batı Hastanesi karşısında geleneksel ocakbaşı lezzeti. Adana kebabı, ciğer kebabı, kuzu şiş ve karışık ızgara. Taze et, meşe kömürü ateşi.">
+  <meta name="keywords" content="Piran Ocakbaşı, Diclekent Kebap, Kayapınar Ocakbaşı, Diyarbakır Kebap, Adana Kebabı, Ciğer Kebabı, Karışık Izgara, Batı Hastanesi karşısı kebapçı">
+  <meta name="author" content="Piran Ocakbaşı">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.piranocakbasi.com/">
+  <meta property="og:title" content="Piran Ocakbaşı Diclekent | Diyarbakır'ın En Lezzetli Ocakbaşı Deneyimi">
+  <meta property="og:description" content="Kayapınar Diclekent'te Batı Hastanesi karşısında taze etler ve meşe kömürü ateşiyle hazırlanan eşsiz kebaplar.">
+  <meta property="og:image" content="assets/images/hero_bg.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Piran Ocakbaşı Diclekent | Diyarbakır'ın En Lezzetli Ocakbaşı Deneyimi">
+  <meta property="twitter:description" content="Kayapınar Diclekent'te Batı Hastanesi karşısında taze etler ve meşe kömürü ateşiyle hazırlanan eşsiz kebaplar.">
+  <meta property="twitter:image" content="assets/images/hero_bg.png">
+
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Piran Ocakbaşı Diclekent Şubesi",
+    "image": "assets/images/hero_bg.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Batı Hastanesi Karşısı, Tanya Ava Plaza, 265. Sok",
+      "addressLocality": "Kayapınar",
+      "addressRegion": "Diyarbakır",
+      "addressCountry": "TR"
+    },
+    "telephone": ["+905304992135", "+904125042434", "+905304962135"],
+    "servesCuisine": "Turkish Kebab",
+    "priceRange": "₺₺",
+    "openingHours": "Mo-Su 11:00-23:00",
+    "url": "https://www.instagram.com/piranocakbasii/",
+    "sameAs": ["https://www.instagram.com/piranocakbasii/"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-follower" id="customCursorFollower"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- Animated Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-embers" id="preloaderEmbers"></div>
+    <div class="preloader-logo" data-translate="preloader_logo">
+      PİRAN OCAKBAŞI
+      <span>SINCE YEARS</span>
+    </div>
+    <div class="preloader-loader">
+      <div class="preloader-loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Live Charcoal Fire & Smoke Background Particles Canvas -->
+  <canvas class="particles-canvas" id="particlesCanvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="nav-logo interactive-element">
+        <div class="logo-wrap">
+          <i class="fa-solid fa-fire logo-icon"></i>
+          <div class="logo-text">
+            PİRAN
+            <span>Ocakbaşı</span>
+          </div>
+        </div>
+      </a>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active interactive-element" data-translate="nav_home">Ana Sayfa</a></li>
+        <li><a href="#about" class="interactive-element" data-translate="nav_about">Hakkımızda</a></li>
+        <li><a href="#menu" class="interactive-element" data-translate="nav_menu">Menü</a></li>
+        <li><a href="#why-choose-us" class="interactive-element" data-translate="nav_why">Neden Biz?</a></li>
+        <li><a href="#gallery" class="interactive-element" data-translate="nav_gallery">Galeri</a></li>
+        <li><a href="#reviews" class="interactive-element" data-translate="nav_reviews">Yorumlar</a></li>
+        <li><a href="#contact" class="interactive-element" data-translate="nav_contact">İletişim</a></li>
+      </ul>
+      
+      <div style="display: flex; align-items: center;">
+        <!-- Language Selector Widget -->
+        <div class="lang-selector">
+          <button class="lang-btn active interactive-element" data-lang="tr">TR</button>
+          <button class="lang-btn interactive-element" data-lang="en">EN</button>
+          <button class="lang-btn interactive-element" data-lang="ku">KU</button>
+        </div>
+        
+      </div>
+      
+      <div class="mobile-toggle interactive-element" id="mobileToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg-container">
+        <img src="assets/images/hero_bg.png" alt="Piran Ocakbaşı Charcoal Grill" class="hero-bg">
+      </div>
+      <div class="hero-overlay"></div>
+      
+      <div class="hero-content">
+        <span class="hero-subtitle" data-translate="hero_subtitle">Geleneksel Diyarbakır Ocakbaşı Deneyimi</span>
+        <h1 class="hero-title" data-translate="hero_title">PİRAN OCAKBAŞI</h1>
+        <p class="hero-description" data-translate="hero_desc">Yılların verdiği tecrübe ile en taze malzemeleri, kor ateşin eşsiz lezzetiyle buluşturuyor; Diyarbakır'ın köklü yemek kültürünü tabaklarınıza taşıyoruz.</p>
+        <div class="hero-btns">
+          <a href="tel:+905304992135" class="btn-primary interactive-element" data-translate="hero_btn_call"><i class="fa-solid fa-phone"></i> Bizi Arayın</a>
+          <a href="#menu" class="btn-secondary interactive-element" data-translate="hero_btn_menu">Menüyü İncele</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="about-img-box scroll-reveal-left" id="aboutImgBox">
+          <img src="assets/images/about_chef.png" alt="Usta Şef Ocakbaşında">
+          <div class="about-badge">
+            <h3 data-translate="about_badge_year">15+</h3>
+            <p data-translate="about_badge_text">Yıllık Tecrübe</p>
+          </div>
+        </div>
+        
+        <div class="about-content scroll-reveal-right" id="aboutContent">
+          <span class="sub-title" data-translate="about_subtitle">Hikayemiz & Kültürümüz</span>
+          <h2 class="main-title" style="margin-bottom: 25px;" data-translate="about_title">Geleneksel Lezzetin Kor Ateşteki Sırrı</h2>
+          <p class="about-text" data-translate="about_desc1">Piran Ocakbaşı olarak, Diyarbakır Kayapınar Diclekent'te misafirlerimize sadece bir akşam yemeği değil, duyuları harekete geçiren otantik bir lezzet şöleni sunuyoruz. Günlük olarak özel seçilen taze etlerimiz, ustalarımızın gizli marinasyon tarifleri ve meşe kömürünün köz ateşinde pişirilerek servis edilir.</p>
+          <p class="about-text" style="margin-bottom: 35px;" data-translate="about_desc2">Sıcak, samimi aile ortamımız ve profesyonel hizmet anlayışımızla ocakbaşı kültürünü modern bir lüksle harmanlıyoruz.</p>
+          
+          <div class="about-features">
+            <div class="about-feat-item">
+              <div class="about-feat-icon"><i class="fa-solid fa-fire"></i></div>
+              <div class="about-feat-text">
+                <h4 data-translate="about_feat1_title">Hakiki Odun Ateşi</h4>
+                <p data-translate="about_feat1_desc">Meşe odunu kömürü ateşiyle pişen etler.</p>
+              </div>
+            </div>
+            
+            <div class="about-feat-item">
+              <div class="about-feat-icon"><i class="fa-solid fa-cubes"></i></div>
+              <div class="about-feat-text">
+                <h4 data-translate="about_feat2_title">Günlük Taze Et</h4>
+                <p data-translate="about_feat2_desc">Bölgemizin en kaliteli meralarından taze seçim.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Dishes Menu Section -->
+    <section class="dishes" id="menu">
+      <div class="section-header" id="menuHeader">
+        <span class="sub-title" data-translate="menu_subtitle">Şefin Seçtikleri</span>
+        <h2 class="main-title" data-translate="menu_title">İmza Lezzetlerimiz</h2>
+      </div>
+      
+      <div class="dishes-container">
+        <!-- Dish 1: Adana Kebab -->
+        <article class="dish-card scroll-reveal-up">
+          <div class="dish-img-box">
+            <img src="assets/images/adana_kebab.png" alt="Adana Kebabı">
+            <div class="dish-fire-tag"><i class="fa-solid fa-fire-flame-curved"></i></div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3 class="dish-title" data-translate="dish1_title">Adana Kebabı</h3>
+              <span class="dish-price">480 ₺</span>
+            </div>
+            <p class="dish-desc" data-translate="dish1_desc">Zırhta çekilmiş kuzu eti, pul biber ve özel baharatlar. Közlenmiş biber, domates ve sumaklı soğan salatası eşliğinde lavasta sunum.</p>
+            <div class="dish-footer">
+              <span class="dish-origin" data-translate="dish1_origin">Acılı / Spicy</span>
+              <button class="dish-order-btn interactive-element" data-translate="dish_order">Sipariş Et <span>→</span></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 2: Urfa Kebab -->
+        <article class="dish-card scroll-reveal-up">
+          <div class="dish-img-box">
+            <img src="assets/images/urfa_kebab.png" alt="Urfa Kebabı">
+            <div class="dish-fire-tag"><i class="fa-solid fa-fire-flame-curved"></i></div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3 class="dish-title" data-translate="dish2_title">Urfa Kebabı</h3>
+              <span class="dish-price">480 ₺</span>
+            </div>
+            <p class="dish-desc" data-translate="dish2_desc">Zırh kıymasının baharatsız ve sade lezzeti. Közlenmiş domates, biber ve taze yeşillikler ile servis edilen enfes klasik.</p>
+            <div class="dish-footer">
+              <span class="dish-origin" data-translate="dish2_origin">Sade / Mild</span>
+              <button class="dish-order-btn interactive-element" data-translate="dish_order">Sipariş Et <span>→</span></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 3: Ciger Kebab -->
+        <article class="dish-card scroll-reveal-up">
+          <div class="dish-img-box">
+            <img src="assets/images/ciger_kebab.png" alt="Diyarbakır Ciğer Kebabı">
+            <div class="dish-fire-tag"><i class="fa-solid fa-fire-flame-curved"></i></div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3 class="dish-title" data-translate="dish3_title">Ciğer Kebabı</h3>
+              <span class="dish-price">520 ₺</span>
+            </div>
+            <p class="dish-desc" data-translate="dish3_desc">Diyarbakır usulü, küçük kesilmiş taze kuzu ciğeri ve kuyruk yağı. İnce lavaş, nane, sumaklı soğan ve limon ile.</p>
+            <div class="dish-footer">
+              <span class="dish-origin" data-translate="dish3_origin">Diyarbakır Özel</span>
+              <button class="dish-order-btn interactive-element" data-translate="dish_order">Sipariş Et <span>→</span></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 4: Kuzu Sis -->
+        <article class="dish-card scroll-reveal-up">
+          <div class="dish-img-box">
+            <img src="assets/images/kuzu_sis.png" alt="Kuzu Şiş Kebabı">
+            <div class="dish-fire-tag"><i class="fa-solid fa-fire-flame-curved"></i></div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3 class="dish-title" data-translate="dish4_title">Kuzu Şiş</h3>
+              <span class="dish-price">550 ₺</span>
+            </div>
+            <p class="dish-desc" data-translate="dish4_desc">Özel marine edilmiş yumuşacık kuzu eti küpleri, kömür ateşinde ağır ağır pişmiş köz sebzeler ve bulgur pilavı eşliğinde.</p>
+            <div class="dish-footer">
+              <span class="dish-origin" data-translate="dish4_origin">Lokum Kıvamı</span>
+              <button class="dish-order-btn interactive-element" data-translate="dish_order">Sipariş Et <span>→</span></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 5: Karisik Izgara -->
+        <article class="dish-card scroll-reveal-up">
+          <div class="dish-img-box">
+            <img src="assets/images/karisik_izgara.png" alt="Karışık Izgara Tabağı">
+            <div class="dish-fire-tag"><i class="fa-solid fa-fire-flame-curved"></i></div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-header">
+              <h3 class="dish-title" data-translate="dish5_title">Karışık Izgara</h3>
+              <span class="dish-price">850 ₺</span>
+            </div>
+            <p class="dish-desc" data-translate="dish5_desc">Adana Kebap, Urfa Kebap, Kuzu Şiş, Tavuk Şiş ve Pirzola. Ortaya servis edilen lüks Piran ziyafet tabağı.</p>
+            <div class="dish-footer">
+              <span class="dish-origin" data-translate="dish5_origin">Ziyafet Platosu</span>
+              <button class="dish-order-btn interactive-element" data-translate="dish_order">Sipariş Et <span>→</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us" id="why-choose-us">
+      <div class="section-header" id="whyHeader">
+        <span class="sub-title" data-translate="why_subtitle">Farkımız Nedir?</span>
+        <h2 class="main-title" data-translate="why_title">Neden Piran Ocakbaşı?</h2>
+      </div>
+      
+      <div class="why-container">
+        <div class="why-card scroll-reveal-up">
+          <div class="why-icon">🔥</div>
+          <h3 data-translate="why1_title">Gerçek Ocakbaşı Kültürü</h3>
+          <p data-translate="why1_desc">Diyarbakır'ın yüzyıllara dayanan otantik ocakbaşı kültürünü, bakır davlumbazlı geleneksel ızgaramızda aslına sadık kalarak yaşatıyoruz.</p>
+        </div>
+        
+        <div class="why-card scroll-reveal-up">
+          <div class="why-icon">🥩</div>
+          <h3 data-translate="why2_title">%100 Taze & Yerli Et</h3>
+          <p data-translate="why2_desc">Dondurulmuş ürün asla kullanmıyoruz. Etlerimiz her gün yerel üreticilerden taze olarak temin edilir ve ustalarımız tarafından işlenir.</p>
+        </div>
+        
+        <div class="why-card scroll-reveal-up">
+          <div class="why-icon">⭐</div>
+          <h3 data-translate="why3_title">Kusursuz Hizmet</h3>
+          <p data-translate="why3_desc">Misafirperverliği lüks standartlarla buluşturuyor, kapıdan girdiğiniz andan itibaren kendinizi özel hissetmenizi sağlıyoruz.</p>
+        </div>
+        
+        <div class="why-card scroll-reveal-up">
+          <div class="why-icon">👨‍👩‍👧</div>
+          <h3 data-translate="why4_title">Aile Dostu Atmosfer</h3>
+          <p data-translate="why4_desc">Geniş ve konforlu oturma düzenimiz ile aileniz ve sevdiklerinizle birlikte keyifli sohbetler eşliğinde yemek yiyebileceğiniz huzurlu bir ortam.</p>
+        </div>
+        
+        <div class="why-card scroll-reveal-up">
+          <div class="why-icon">🕒</div>
+          <h3 data-translate="why5_title">Hızlı & Sıcak Servis</h3>
+          <p data-translate="why5_desc">Kebaplarımız tam zamanında, kor ateşin sıcaklığı üzerindeyken masanıza ulaşır. Lezzet soğumadan keyif başlar.</p>
+        </div>
+        
+        <div class="why-card scroll-reveal-up">
+          <div class="why-icon">❤️</div>
+          <h3 data-translate="why6_title">Asırlık Tarifler</h3>
+          <p data-translate="why6_desc">Baharat dengesinden marinasyon süresine kadar atalarımızdan miras kalan reçeteleri birebir uyguluyor, orijinal tadı koruyoruz.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section (Masonry Grid) -->
+    <section class="gallery" id="gallery">
+      <div class="section-header" id="galleryHeader">
+        <span class="sub-title" data-translate="gallery_subtitle">Görsel Ziyafet</span>
+        <h2 class="main-title" data-translate="gallery_title">Piran Dünyasından Kareler</h2>
+      </div>
+      
+      <div class="gallery-grid">
+        <!-- Item 1 -->
+        <div class="gallery-item col-6-row-3 scroll-reveal-scale" data-src="assets/images/hero_bg.png">
+          <img src="assets/images/hero_bg.png" alt="Ocakbaşında Kebap Cızırtısı">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <h4 data-translate="gallery_item1">Kor Ateş Keyfi</h4>
+          </div>
+        </div>
+        
+        <!-- Item 2 -->
+        <div class="gallery-item col-6-row-2 scroll-reveal-scale" data-src="assets/images/about_chef.png">
+          <img src="assets/images/about_chef.png" alt="Usta Şef Kebap Grilleme">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <h4 data-translate="gallery_item2">Ustalık Eseri</h4>
+          </div>
+        </div>
+        
+        <!-- Item 3 -->
+        <div class="gallery-item col-4-row-2 scroll-reveal-scale" data-src="assets/images/adana_kebab.png">
+          <img src="assets/images/adana_kebab.png" alt="Adana Kebabı">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <h4 data-translate="gallery_item3">Zırh Kebabı</h4>
+          </div>
+        </div>
+        
+        <!-- Item 4 -->
+        <div class="gallery-item col-4-row-3 scroll-reveal-scale" data-src="assets/images/ciger_kebab.png">
+          <img src="assets/images/ciger_kebab.png" alt="Diyarbakır Ciğeri">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <h4 data-translate="gallery_item4">Meşhur Ciğerimiz</h4>
+          </div>
+        </div>
+        
+        <!-- Item 5 -->
+        <div class="gallery-item col-4-row-2 scroll-reveal-scale" data-src="assets/images/karisik_izgara.png">
+          <img src="assets/images/karisik_izgara.png" alt="Karışık Izgara Tablası">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <h4 data-translate="gallery_item5">Izgara Şöleni</h4>
+          </div>
+        </div>
+        
+        <!-- Item 6 -->
+        <div class="gallery-item col-8-row-3 scroll-reveal-scale" data-src="assets/images/kuzu_sis.png">
+          <img src="assets/images/kuzu_sis.png" alt="Lokum Kuzu Şiş">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <h4 data-translate="gallery_item6">Közde Kuzu Şiş</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+      <span class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></span>
+      <img src="" alt="Enlarged Visual" class="lightbox-content" id="lightboxContentImg">
+    </div>
+
+    <!-- Reviews Testimonial Section -->
+    <section class="reviews" id="reviews">
+      <div class="section-header" id="reviewsHeader">
+        <span class="sub-title" data-translate="reviews_subtitle">Misafir Deneyimleri</span>
+        <h2 class="main-title" data-translate="reviews_title">Piran Hakkında Ne Dediler?</h2>
+      </div>
+      
+      <div class="reviews-slider-container">
+        <div class="reviews-wrapper">
+          <div class="reviews-track" id="reviewsTrack">
+            <!-- Slide 1 -->
+            <div class="review-slide">
+              <div class="review-card">
+                <div class="review-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text" data-translate="review1_text">"Diyarbakır'da yediğim en iyi ciğer buradaydı. Etin yumuşaklığı ve sıcak servis edilmesi harikaydı. Ocakbaşının başındaki şeflerin samimiyeti de cabası. Kesinlikle tavsiye ederim."</p>
+                <h4 class="review-author" data-translate="review1_author">Ahmet Yılmaz<span>Gurme & Seyyah</span></h4>
+              </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="review-slide">
+              <div class="review-card">
+                <div class="review-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text" data-translate="review2_text">"Piran Ocakbaşı lüks konsepti ve geleneksel lezzeti muhteşem birleştiren bir yer. Karışık ızgara sipariş ettik, her parça et lokum gibi ağızda dağılıyordu. Servis çok hızlıydı."</p>
+                <h4 class="review-author" data-translate="review2_author">Merve Demirtaş<span>İş İnsanı</span></h4>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="review-slide">
+              <div class="review-card">
+                <div class="review-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text" data-translate="review3_text">"Diclekent'te temiz, şık ve nezih bir kebapçı arıyorsanız doğru adres. Adana Kebabının acısı tam kıvamında, mezeleri inanılmaz taze. Her hafta buradayız."</p>
+                <h4 class="review-author" data-translate="review3_author">Serkan Kaya<span>Gıda Mühendisi</span></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide Dots -->
+        <div class="reviews-dots" id="reviewsDots">
+          <span class="review-dot active" data-index="0"></span>
+          <span class="review-dot" data-index="1"></span>
+          <span class="review-dot" data-index="2"></span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact & Map Section -->
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <div class="contact-info-grid scroll-reveal-left">
+          <div class="contact-card-box">
+            <h3 data-translate="contact_title">Bize Ulaşın</h3>
+            
+            <div class="contact-links-list">
+              <!-- Location Link -->
+              <a href="https://maps.google.com/?q=Batı+Hastanesi+Karşısı+Tanya+Ava+Plaza+265.Sok+Kayapınar+Diyarbakır" target="_blank" class="contact-link-item interactive-element">
+                <div class="contact-link-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-link-text">
+                  <h4 data-translate="contact_address_label">Adresimiz</h4>
+                  <p>Batı Hastanesi Karşısı, Tanya Ava Plaza, 265. Sok, Kayapınar/Diyarbakır</p>
+                </div>
+              </a>
+              
+              <!-- Phone Link -->
+              <a href="tel:+905304992135" class="contact-link-item interactive-element">
+                <div class="contact-link-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-link-text">
+                  <h4 data-translate="contact_phone_label">Telefon Numaramız</h4>
+                  <p>0530 499 21 35</p>
+                </div>
+              </a>
+
+              <!-- Second Phone Link -->
+              <a href="tel:+904125042434" class="contact-link-item interactive-element">
+                <div class="contact-link-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-link-text">
+                  <h4 data-translate="contact_phone2_label">Sabit Hattımız</h4>
+                  <p>0412 504 24 34</p>
+                </div>
+              </a>
+
+              <!-- Opening Hours -->
+              <div class="contact-link-item">
+                <div class="contact-link-icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="contact-link-text">
+                  <h4 data-translate="contact_hours_label">Çalışma Saatleri</h4>
+                  <p data-translate="contact_hours_val">Pazartesi - Pazar: 11:30 – 22:00</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media Buttons (Configured to real Instagram page) -->
+            <div class="social-medias">
+              <a href="https://www.instagram.com/piranocakbasii/" target="_blank" class="social-icon-btn interactive-element"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://facebook.com" target="_blank" class="social-icon-btn interactive-element"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://twitter.com" target="_blank" class="social-icon-btn interactive-element"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Interactive Actions -->
+          <div class="quick-calls-row">
+            <a href="tel:+905304992135" class="call-action-btn tel-btn interactive-element" data-translate="contact_btn_call">
+              <i class="fa-solid fa-phone-volume"></i> Şimdi Arayın
+            </a>
+            <a href="https://wa.me/905304992135?text=Merhaba,%20bilgi%20almak%20istiyorum." target="_blank" class="call-action-btn wp-btn interactive-element" data-translate="contact_btn_wp">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp Destek
+            </a>
+          </div>
+        </div>
+        
+        <!-- Dark themed Map Container -->
+        <div class="maps-container scroll-reveal-right">
+          <!-- Google Maps Iframe pointing to Diclekent Kayapınar Diyarbakır -->
+          <iframe 
+            src="https://maps.google.com/maps?q=Bat%C4%B1+Hastanesi+Kar%C5%9F%C4%B1s%C4%B1+Tanya+Ava+Plaza+265.Sok+Kayap%C4%B1nar+Diyarbak%C4%B1r&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-wrap" style="margin-bottom: 20px;">
+          <i class="fa-solid fa-fire logo-icon"></i>
+          <h2 style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--gold); letter-spacing: 2px; margin-bottom: 0;">PİRAN</h2>
+        </div>
+        <p data-translate="footer_desc">Geleneksel lezzetlerin modern tasarımla buluştuğu nokta. Kayapınar Diclekent'te kor ateş kebabın gerçek adresi.</p>
+      </div>
+      
+      <div class="footer-widget">
+        <h3 class="footer-title" data-translate="footer_links_title">Hızlı Bağlantılar</h3>
+        <ul class="footer-links">
+          <li><a href="#home" class="interactive-element" data-translate="footer_home">Ana Sayfa</a></li>
+          <li><a href="#about" class="interactive-element" data-translate="footer_about">Hakkımızda</a></li>
+          <li><a href="#menu" class="interactive-element" data-translate="footer_menu">Menümüz</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-widget">
+        <h3 class="footer-title" data-translate="footer_cats_title">Kategoriler</h3>
+        <ul class="footer-links">
+          <li><a href="#menu" class="interactive-element" data-translate="footer_adana">Adana Kebabı</a></li>
+          <li><a href="#menu" class="interactive-element" data-translate="footer_urfa">Urfa Kebabı</a></li>
+          <li><a href="#menu" class="interactive-element" data-translate="footer_ciger">Ciğer Kebabı</a></li>
+          <li><a href="#menu" class="interactive-element" data-translate="footer_karisik">Karışık Izgara</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-widget">
+        <h3 class="footer-title" data-translate="footer_contact_title">Bize Ulaşın</h3>
+        <div class="footer-info">
+          <p><span data-translate="contact_address_label">Adresimiz</span>: Batı Hastanesi Karşısı, Tanya Ava Plaza, 265. Sok, Kayapınar/Diyarbakır</p>
+          <p><span data-translate="contact_phone_label">Telefon Numaramız</span>: 0530 499 21 35</p>
+          <p><span data-translate="contact_hours_label">Çalışma Saatleri</span>: 11:30 - 22:00</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p data-translate="footer_copyright">&copy; 2026 Piran Ocakbaşı. Tüm Hakları Saklıdır.</p>
+      <p>Powered with ❤️ in Diyarbakır</p>
+    </div>
+  </footer>
+
+  <!-- Floating Utility Items -->
+  <div class="back-to-top interactive-element" id="backToTop">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+  
+
+  <!-- ==========================================================================
+     LIBRARIES (GSAP, SCROLLTRIGGER, LENIS SMOOTH SCROLL)
+     ========================================================================== */ -->
+  <!-- GSAP Core -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- GSAP ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+  
+  <!-- Custom JS Modules -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
